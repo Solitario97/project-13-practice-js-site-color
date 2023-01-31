@@ -7,6 +7,7 @@ body{
     font-family: 'Roboto', sans-serif;
     height: 100vh;
     display: flex;
+    background: green;
 }
 .col{
     flex: 1;
@@ -24,6 +25,20 @@ h2{
     transition: background 0.3s;
 }
 h2:hover{
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+button{
+    border: none;
+    background: transparent;
+    font-size: 2.5rem;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background 0.3s;
+    color: white;
+}
+button:hover{
     background: rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
