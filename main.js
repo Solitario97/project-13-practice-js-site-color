@@ -1,6 +1,6 @@
 const   cols    =   document.querySelectorAll(".col")
 
-function generateRandomColor(){
+/* function generateRandomColor(){
 
     const hexCodes  =   "0123456789ABCDF"
     let color   =   ""
@@ -10,12 +10,24 @@ function generateRandomColor(){
     return  "#" + color
 
 
-}
+} */
 
 function setRandomColors(){
     cols.forEach(col => {
-        console.log(col)
+        const text = col.querySelector("h2")
+        const color = chroma.random()
+        const button = col.querySelector('button')
+
+        text.textContent = color
+        col.style.background = color
+
+        setTextColor(text. color)
     })
 }
 
-setRandomColors();
+function setTextColor(text, color) {
+    const luminance = chroma(color).luminance()
+    text.style.color = luminance > 0.5 ? 'black' : 'white'
+  }
+
+setRandomColors()
