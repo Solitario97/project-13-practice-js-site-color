@@ -7,7 +7,7 @@ body{
     font-family: 'Roboto', sans-serif;
     height: 100vh;
     display: flex;
-    background: green;
+    background: rgb(44, 95, 44);
 }
 .col{
     flex: 1;
@@ -15,6 +15,7 @@ body{
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
+    margin-top: 200px;
 }
 
 h2{
@@ -40,4 +41,10 @@ button{
 button:hover{
     background: rgba(0, 0, 0, 0.1);
     cursor: pointer;
+}
+
+.main__title{
+    position: absolute;
+    top: 80px;
+    left: 250px;
 }
