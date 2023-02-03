@@ -42,9 +42,17 @@ button:hover{
     background: rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
-
 .main__title{
     position: absolute;
-    top: 80px;
-    left: 250px;
+    top: 70px;
+    left: 50%;
+    transform:translateX(-50%);
+    cursor: pointer;
 }
+#text{
+    padding: 10px 10px 10px 10px;
+}
+#text:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    
+  }

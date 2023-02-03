@@ -23,8 +23,6 @@ document.addEventListener('click', (event) => {
     }
 })
 
-
-
 function generateRandomColor() {
 
     const hexCodes = '0123456789ABCDEF'
@@ -64,3 +62,17 @@ function setTextColor(text, color){
 }
 
 setRandomColors()
+
+document.getElementById("text").addEventListener("click", function() {
+    this.style.color = generateRandomColor();
+  });
+
+
+/*   function getRandomColor() {
+    var letters = "0123456789ABCDEF";
+    var color = "#";
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  } */
